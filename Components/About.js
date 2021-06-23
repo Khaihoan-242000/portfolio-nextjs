@@ -1,5 +1,4 @@
 import Link from 'next/link'
-// import Avatar from '../img/avatar-02.jpeg'
 
 const About = () => {
     return (

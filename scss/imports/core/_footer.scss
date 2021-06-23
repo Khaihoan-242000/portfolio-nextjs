@@ -15,7 +15,7 @@
         }
     }
     &__bg {
-        background-color: #222f3e;
+        background-color: $first-color-second-dark;
         padding: 2rem 0 3rem;
         @include minW($medium) {
             padding: 3rem 0 3.5rem;
