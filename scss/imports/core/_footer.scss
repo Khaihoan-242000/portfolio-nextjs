@@ -1,0 +1,83 @@
+// css footer
+.footer {
+    padding-top: 2rem;
+    &__container {
+        row-gap: 3.5rem;
+        @include minW($fit) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include minW($medium) {
+            padding: 0 1rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include minW($big) {
+            padding: 0;
+        }
+    }
+    &__bg {
+        background-color: #222f3e;
+        padding: 2rem 0 3rem;
+        @include minW($medium) {
+            padding: 3rem 0 3.5rem;
+        }
+    }
+    &__title {
+        font-size: $h2-font-size;
+        font-weight: 500;
+        font-family: "The Scientist";
+        margin-bottom: $mb-0-25;
+    }
+    &__subtitle {
+        font-size: $small-font-size;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        @include minW($medium) {
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+        li {
+            @include minW($medium) {
+                @include mid(true);
+            }
+        }
+    }
+    &__link {
+        white-space: nowrap;
+    }
+    &__link:hover {
+        color: $first-color-lighter;
+    }
+    &__socials {    
+       @include minW($medium) {
+            display: flex;
+            justify-self: flex-end;
+            align-items: center;
+        }
+    }
+    &__social {
+        font-size: 1.25rem;
+        margin-right: $mb-1-5;
+        &:hover {
+            color: $first-color-lighter;
+        }
+    }
+    &__coppy {
+        font-size: $small-font-size;
+        text-align: center;
+        color: $text-color-lighter;
+        margin-top: $mb-3;
+        margin-bottom: $mb-1-5;
+        @include minW($medium) {
+            margin-top: 4.5rem;       
+        }
+    }
+    &__title,
+    &__subtitle,
+    &__social,
+    &__link {
+        color: $white-cl;
+    }
+}

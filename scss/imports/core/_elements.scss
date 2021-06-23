@@ -1,0 +1,167 @@
+// css button, title, icon, elements...
+img {
+  max-width: 100%;
+}
+/*======== Button ==========*/
+.btn {
+  display: inline-block;
+  background-color: $first-color;
+  color: $white-cl;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: $font-medium;
+  cursor: pointer;
+  &:hover {
+    background-color: $first-color-alt;
+  }
+  &__icon {
+    font-size: 1.25rem;
+    margin-left: $mb-0-5;
+    transition: all $t ease;
+  }
+  &--flex {
+    display: inline-flex;
+    align-items: center;
+  }
+  &--small {
+    padding: 0.75rem 1rem;
+  }
+  &--link {
+    padding: 0;
+    background-color: transparent;
+    color: $first-color;
+    &:hover {
+      background-color: transparent;
+      color: $first-color-alt;
+    }
+  }
+}
+
+/* Show Menu */
+
+/* Active Link*/
+
+// custom arrow slider
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 1.25rem !important;
+  color: $first-color;
+  font-weight: 700;
+  @include minW($big) {
+    font-size: 2rem !important;            
+  }
+}
+.swiper-button-prev {
+  left: -0.5rem !important;
+  @include minW($big) {
+      left: -3.5rem !important;            
+  }
+}
+.swiper-button-next {
+  right: -0.5rem !important;
+  @include minW($big) {
+    right: -3.5rem !important;            
+  }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem !important;
+  @include minW($big) {
+      bottom: -4.5rem !important;            
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: $first-color !important;
+}
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none !important;
+}
+.swiper-container {
+  overflow: initial !important;
+}
+
+/* Scroll Top */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: $first-color;
+  padding: 0.3rem 0.3rem;
+  opacity: 0.5;
+  border-radius: 0.4rem;
+  z-index: 99;
+  transition: all $t ease;
+  cursor: pointer;
+  &__icon {
+    font-size: 1.5rem;
+    color: $white-cl;
+  }
+  &.active {
+    bottom: 5rem;
+    opacity: 1;
+    transition: all $t ease;
+  }
+}
+
+/*==============================*/
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
