@@ -4,7 +4,7 @@ import Link from 'next/link'
 const About = () => {
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About</h2>
+            <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My information</span>
             <div className="about__container container grid">
                 <img src="/img/avatar.jpeg" alt="KhaiHoan Avatar" className="about__img" />
