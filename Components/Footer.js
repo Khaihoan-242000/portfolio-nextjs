@@ -47,7 +47,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <p className="footer__coppy">&#169; Khai Hoan - FigDom</p>
+                {/* <p className="footer__coppy">&#169; Khai Hoan - FigDom</p> */}
+                <p className="footer__coppy">Miraitowa - Fluoxetine</p>
             </div>
         </footer>
     )

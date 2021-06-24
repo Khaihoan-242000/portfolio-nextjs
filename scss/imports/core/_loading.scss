@@ -1,1 +1,43 @@
-// css loading
+// // css loading
+// .loading {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background-color: $first-color-second;
+//     z-index: 2000;
+//     h2 {
+//         font-size: 3rem;
+//         @include mid();
+//         color: #8395a7;
+//         text-transform: uppercase;
+//         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+//         @include maxW($args) {
+//             font-size: 2.7rem;
+//         }
+//         @include minW($medium) {
+//             font-size: 4rem;
+//         }
+//         @include minW($big) {
+//             font-size: 5rem;
+//         }
+//     }
+//     p {
+//         @include mid();
+//         font-size: 2.5rem;
+//         font-family: $font-logo;
+//         font-weight: $font-semi-bold;
+//         color: $text-color;
+//         @include minW($medium) {
+//             font-size: 3rem;
+//         }
+//         @include minW($big) {
+//             font-size: 3.5rem;
+//         }
+//     }
+// }
+
+// @keyframes animationLoading {
+
+// }

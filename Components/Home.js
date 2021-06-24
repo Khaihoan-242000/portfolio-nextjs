@@ -28,6 +28,7 @@ const Home = () => {
                     <div className="home__data">
                         <h2 className="home__title">Hi, I'm Hoan</h2>
                         <h3 className="home__subtitle">Front End Developer</h3>
+                        <span className="home__love">Miraitowa - Fluoxetine</span>
                         <p className="home__description">I have experience and knowledge in website design and development, actively learn and develop myself to bring the best products to customers.</p>
                         
                         <Link href="#contact">
